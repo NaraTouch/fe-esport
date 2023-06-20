@@ -1,6 +1,6 @@
 
 <template>
-  <header class="md:flex w-full text-gray-200 border-spacing-1 border-t-0 shadow-xl border-[#343434] bg-gray-800 px-2 md:sticky md:top-0 z-20">
+  <header class="md:flex sm:flex w-full text-gray-200 border-spacing-1 border-t-0 shadow-xl border-[#343434] bg-gray-800 px-2 md:sticky sm:sticky md:top-0 sm:top-0 z-20">
     <div class="h-14 flex justify-between md:justify-center items-center w-full">
       <nav class="fixed w-full p-8 bg-transparent">
         <div class="flex items-center justify-between">
@@ -50,7 +50,7 @@
           </transition>
     
           <!-- Drawer Menu -->
-          <aside class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30" 
+          <aside class="p-5 transform top-0 left-0 w-64 bg-gray-800 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30" 
             :class="isOpen ? 'translate-x-0' : '-translate-x-full' ">
             
             <div class="close">
