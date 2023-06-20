@@ -8,18 +8,21 @@ const isDark = useDark({
 })
 const toggleDark = useToggle(isDark)
 
-watch(isDark, (value) => {
+watch(isDark, (value: any) => {
   cookieDark.value = value
 
   // const htmlElement = document.documentElement;
   const selectorHtml = document.getElementById('dark-mode');
+  const selector2Html = document.getElementById('dark-mode-aside');
   if(value) {
     // Add a class to the html element
     // htmlElement.classList.add("dark","vt-dark");
     selectorHtml.classList.add("dark","vt-dark");
+    selector2Html.classList.add("dark","vt-dark");
   } else {
     // htmlElement.classList.remove("dark","vt-dark");
     selectorHtml.classList.remove("dark","vt-dark");
+    selector2Html.classList.remove("dark","vt-dark");
   }
 })
 </script>

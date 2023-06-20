@@ -8,6 +8,7 @@ const cookieDark = useCookie('dark-mode')
   <div id="dark-mode" :class="cookieDark ? 'dark vt-dark' : ''">
     <TwToast position="bottom-right" :toasts="toasts" />
     <div>
+       <LayoutFloating />
       <LayoutHeader />
       <div class="py-4 px-0 md:px-1">
         <div class="flex min-h-screen text-sky-900 dark:text-gray-200 bg-opacity-40 bg-gray-900 rounded-3xl shadow-lg">
