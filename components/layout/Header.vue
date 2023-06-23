@@ -1,6 +1,6 @@
 
 <template>
-  <header class="md:flex sm:flex w-full text-gray-200 border-spacing-1 border-t-0 shadow-xl border-[#343434] bg-gray-800 px-2 md:sticky sm:sticky md:top-0 sm:top-0 z-20">
+  <header class="flex w-full text-gray-200 border-spacing-1 border-t-0 shadow-xl border-[#343434] bg-gray-800 px-2 sticky top-0 z-20">
     <div class="h-14 flex justify-between md:justify-center items-center w-full">
       <nav class="fixed w-full p-8 bg-transparent">
         <div class="flex items-center justify-between">
@@ -152,36 +152,6 @@ const onKeyDown = (e: KeyboardEvent): void => {
 };
 </script>
 
-<!-- <script>
-  export default {
-    data() {
-      return {
-        isOpen: false
-      };
-    },
-    methods: {
-      drawer() {
-        this.isOpen = !this.isOpen;
-      }
-    },
-    watch: {
-      isOpen: {
-        immediate: true,
-        handler(isOpen) {
-          if (process.client) {
-            if (isOpen) document.body.style.setProperty("overflow", "hidden");
-            else document.body.style.removeProperty("overflow");
-          }
-        }
-      }
-    },
-    mounted() {
-      document.addEventListener("keydown", e => {
-        if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
-      });
-    }
-  };
-  </script> -->
 <style scoped>
 .expand-enter-active,
 .expand-leave-active {

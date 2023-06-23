@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TwButton, TwDialog, TwFeather } from "vue3-tailwind";
+import "tw-elements/dist/css/tw-elements.min.css";
 </script>
 <template>
   <NuxtLayout>
